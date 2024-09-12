@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMAX - Encontre o carro mais barato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AUTOMAX</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <h2>Encontre o carro mais barato da sua cidade</h2>
+            <form id="search-form">
+                <input type="text" id="car-model" placeholder="Digite o modelo do carro (Ex: Honda Civic 2010)">
+                <div class="location">
+                    <span id="city-detection">Cidade detectada: São Paulo</span>
+                    <button type="button" id="change-location">Alterar</button>
+                </div>
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>O carro mais barato, na sua cidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

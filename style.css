@@ -5,21 +5,21 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 header {
-    background-color: #2b2e4a;
+    background-color: #1f2833;
     padding: 20px 0;
     text-align: center;
 }
 
 header .logo h1 {
-    color: #ffffff;
+    color: #66fcf1;
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -29,22 +29,28 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .search-container {
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
     width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .search-container h2 {
     margin-bottom: 20px;
-    color: #2b2e4a;
+    color: #1f2833;
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 #car-model {
@@ -52,8 +58,9 @@ main {
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.1em;
+    background-color: #f4f4f4;
 }
 
 .location {
@@ -71,31 +78,34 @@ main {
 #change-location {
     background-color: transparent;
     border: none;
-    color: #2b2e4a;
+    color: #45a29e;
     cursor: pointer;
     font-size: 0.9em;
     text-decoration: underline;
 }
 
 .search-button {
-    background-color: #09a858;
+    background-color: #45a29e;
     color: #fff;
     border: none;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2em;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
-    background-color: #05d26d;
+    background-color: #66fcf1;
+    color: #1f2833;
 }
 
 footer {
-    background-color: #2b2e4a;
+    background-color: #1f2833;
     padding: 10px 0;
     text-align: center;
     color: #fff;
     font-size: 0.9em;
+    position: relative;
 }
